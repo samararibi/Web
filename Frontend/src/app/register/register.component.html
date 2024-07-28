@@ -1,0 +1,22 @@
+
+<div class="container mt-4">
+
+
+    <h2 class="text-center"> Create your account</h2>
+
+    <div class="col-6 mx-auto">
+
+     
+
+        <input [(ngModel)]="candidate.firstName" type="text" class="form-control m-1" placeholder="firstName">
+        <input [(ngModel)]="candidate.lastName" type="text" class="form-control m-1" placeholder="lastName">
+        <input [(ngModel)]="candidate.email" type="text" class="form-control m-1" placeholder="email">
+        <input [(ngModel)]="candidate.password" type="text" class="form-control m-1" placeholder="password">
+     
+
+        <button (click)="register()" class="btn btn-dark form-control m-1">Register</button>
+
+
+    </div>
+
+</div>

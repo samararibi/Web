@@ -1,0 +1,21 @@
+/* home.component.css */
+.container {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .btn-pink {
+    background-color: #ffcccc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-pink:hover {
+    background-color: #ff99cc;
+  }
+  

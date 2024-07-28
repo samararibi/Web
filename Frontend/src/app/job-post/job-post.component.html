@@ -1,0 +1,40 @@
+<!-- job-post.component.html -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Postez une offre d'emploi</h2>
+    <form (ngSubmit)="onSubmit()" class="border p-4 shadow-sm bg-white">
+      <div class="form-group mb-3">
+        <label for="title" class="form-label">Titre de l'offre</label>
+        <input [(ngModel)]="job.title" name="title" type="text" class="form-control" id="title" placeholder="Titre de l'offre" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea [(ngModel)]="job.description" name="description" class="form-control" id="description" placeholder="Description de l'offre" rows="5" required></textarea>
+      </div>
+      <div class="form-group mb-3">
+        <label for="company" class="form-label">Nom de l'entreprise</label>
+        <input [(ngModel)]="job.company" name="company" type="text" class="form-control" id="company" placeholder="Nom de l'entreprise" required>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="location" class="form-label">Lieu</label>
+            <input [(ngModel)]="job.location" name="location" type="text" class="form-control" id="location" placeholder="Lieu" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="salary" class="form-label">Salaire</label>
+            <input [(ngModel)]="job.salary" name="salary" type="text" class="form-control" id="salary" placeholder="Salaire" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group mb-4">
+        <label for="requirements" class="form-label">Exigences</label>
+        <input [(ngModel)]="job.requirements" name="requirements" type="text" class="form-control" id="requirements" placeholder="Exigences">
+        <small class="form-text text-muted">Séparez les exigences par des virgules.</small>
+      </div>
+      <button type="submit" class="btn btn-pink w-100">Publier l'offre</button>
+    </form>
+  </div>
+  
+  
